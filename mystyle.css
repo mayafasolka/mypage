@@ -1,0 +1,96 @@
+body {
+    background-color:
+     azure;
+     background-image: url("paper.gif");
+     background-repeat: repeat-x;
+
+     
+}
+img{
+    margin: 20px
+}
+#forside-body {
+    background-color: aqua(232,246,143)
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22 px;
+    color: blueviolet;
+    margin: 20px;background-image: url("paper.gif");
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+}
+
+.forside-p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: aqua(9,1,16);
+    margin: 20px;
+}
+h1{
+    color: blue;
+    text-shadow: 2px 2px red;
+    font-size: 40px;
+}
+.h1-bakgrunn{
+    background-color: aquamarine; welcome to my netside
+}
+div {
+    background-color: green;
+    opacity: 0.3;
+    left: unset;
+    text-align: justify;
+    width: 300;
+    border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  font-size: 40px;
+}
+p.ex1 {
+    outline-style: solid;
+    outline-color: #ff0000; /* red */ }
+    p.uppercase {
+        text-transform: uppercase;}
+.card a { 
+    color: hotpink;
+}
+div:hover p {
+    display: block;
+  }
+  img:hover {
+    opacity: 1.0;
+  }
+  <ul>
+  <li><a href="default.asp">internet </a></li>
+  <li><a href="news.asp">html</a></li>
+  <li><a href="contact.asp">css</a></li>
+  <li><a href="about.asp">About img</a></li>
+
+</ul>
+table {
+    border: 20px solid 
+}
+
+thead > tr{
+    color:rgb(176, 127, 54);
+    background-color: rgb(148, 225, 80);
+    text-align: center;color: rgb(12, 149, 92);
+
+}
+<style>
+thead {color: rgb(8, 252, 8);
+background-color: #142604;
+}
+tbody {color: rgb(77, 117, 237);}
+table {color: rgb(248, 57, 57);}
+table, th, td {
+  border: 1px solid rgb(57, 5, 5);
+}
+table, th, td {
+    border: 1px solid rgb(223, 21, 149);
+    border-collapse: collapse;
+  }
+  table.striped>tbody> tr:nth-child(odd) {background-color: black;
+  }
+</style>
