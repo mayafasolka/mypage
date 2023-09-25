@@ -66,8 +66,8 @@ div:hover p {
   <li><a href="news.asp">html</a></li>
   <li><a href="contact.asp">css</a></li>
   <li><a href="about.asp">About img</a></li>
-
 </ul>
+
 table {
     border: 20px solid 
 }
@@ -76,8 +76,8 @@ th, td {
   }
 thead > tr{
     color:rgb(176, 127, 54);
-    background-color: rgb(148, 225, 80);
-    text-align: center;color: rgb(12, 149, 92);
+    background-color: rgb(132, 151, 69);
+    text-align: center;color: rgb(210, 9, 9);
     border-radius: 10px;
 }
 th, td {
@@ -85,21 +85,29 @@ th, td {
   }
 <style>
 thead {color: rgb(8, 252, 8);
-background-color: #142604;
+background-color: #a6d67c;
 }
-tbody {color: rgb(77, 117, 237);}
-table {color: rgb(248, 57, 57);}
+tbody {color: rgb(237, 77, 178);}
+table {color: rgb(13, 13, 13);}
 table, th, td {
-  border: 1px solid rgb(57, 5, 5);
-}
-table, th, td {
-    border: 1px solid rgb(223, 21, 149);
+    border: 1px solid rgb(239, 170, 52);
     border-collapse: collapse;
+    background-color: #0f0f0e;
+     
   }
-  table.striped>tbody> tr:nth-child(odd) {background-color: black;
+  table.striped>tbody> tr:nth-child(odd) {background-color: rgb(69, 70, 16);}
+  th {
+    text-align: left;
   }
-</style>
-table, th, td {
-    border: 1px solid rgb(239, 218, 218);
-    border-collapse: collapse;
+  th, td {
+  padding:15px;
+    padding-top: 10px;
+  padding-bottom:20px;
+  padding-left:30px;
+  padding-right: 40px;
   }
+    td:nth-child(even), th:nth-child(even) {
+    background-color: #090909;
+  }
+  tr:hover {background-color: #D6EEEE;}
+  
