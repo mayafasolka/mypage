@@ -71,13 +71,18 @@ div:hover p {
 table {
     border: 20px solid 
 }
-
+th, td {
+    border-style: dotted;
+  }
 thead > tr{
     color:rgb(176, 127, 54);
     background-color: rgb(148, 225, 80);
     text-align: center;color: rgb(12, 149, 92);
-
+    border-radius: 10px;
 }
+th, td {
+    background-color: #96D4D4;
+  }
 <style>
 thead {color: rgb(8, 252, 8);
 background-color: #142604;
@@ -94,3 +99,7 @@ table, th, td {
   table.striped>tbody> tr:nth-child(odd) {background-color: black;
   }
 </style>
+table, th, td {
+    border: 1px solid rgb(239, 218, 218);
+    border-collapse: collapse;
+  }
