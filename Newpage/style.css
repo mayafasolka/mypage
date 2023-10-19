@@ -1,6 +1,6 @@
 body {
     background-color:
-     rgb(21, 9, 193);
+     rgb(27, 13, 222);
      background-image: url("paper.gif");
      background-repeat: repeat-x;
 }
@@ -13,9 +13,9 @@ img{
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22 px;
-    color: rgb(23, 109, 222);
+    color: rgb(47, 130, 240);
     margin: 20px;background-image: url("paper.gif");
-    border: 1px solid black;
+    border: 1px solid rgb(159, 194, 3);
     outline: 1px solid red;
     outline-offset: 15px;
 }
