@@ -1,28 +1,68 @@
-.game{
-    width: 255px;
-    text-align: center;
-    font-family: system-ui;
-    color: black;
-    margin: auto;
-    font-weight: 500px;
-}
-.title{
-    background: rgb(54, 75, 1);
-    padding:5px 0;
-    margin: 5px 0;
-}
-span{
-    color: rgb(4, 116, 79);
-}
-.square{
-    width: 80px;
-    height: 80px;
-    background: rgb(54, 75, 1);
-    float: left;
-    margin: 2px;
-    font-size: 50px;
-}
-.square:hover{
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  body{
+    background: #333;
+  }
+  .main{
     background: #ccc;
-    cursor: pointer;
-}
+    text-align: center;
+    width:400px;
+    margin: 80px auto;
+    padding: 30px;
+  }
+  form{
+    padding: 0 5px;
+    margin-bottom: 15px;
+  }
+  .textview{
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    pointer-events: none;
+  }
+  .clearfix:before, .clearfix:after{
+  content:"" ;
+  display: table;
+  clear: both;
+  width: 100%px;
+  }
+  .col-3{
+    width: 25%;
+    padding:5px;
+    float: left;
+  }
+  .col-6{
+    width: 100%px;
+    padding:5px;
+    float: left;
+  }
+  .button{
+    width: 100%px;
+    height: 40px;
+    outline: none;
+  }
+  .button.top-button{
+    background: #6d4b7e;
+    border-color: #d6d6d6;
+    color: #ccc;
+  }
+  .button.top-button{
+    background: #6d4b7e;
+    border-color: #d6d6d6;
+    color: #ccc;
+  }
+   .button.equal{
+    background: #ad3535;
+    color: #ccc;
+    font-size: 22px;
+   }
+   .button.operator{
+    background: #20b2aa;
+    border-color: #d6d6d6;
+    color: #ccc;
+    font-size: 20px;
+   }
