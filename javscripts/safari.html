@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function bergen_antall_båtter(){
+            pass
+        }
+        function bergen_price(a){
+             return (4000+(20*a))
+        }
+        function bergen_rabatt(){
+            pass
+        }
+        function les_antall_personer(){
+            let antallpersoner= document.querySelector('#antallIn').value;
+            console.log(antallpersoner)
+            let price =bergen_price(antallpersoner)
+            console.log(price)
+
+            let antallUt=document.querySelector('#antallUt')
+            antallUt.innerHTML=antall
+            let priceUt=document.querySelector("#priceUt")
+            priceUt.innerHTML=price
+        }
+    </script>
+    
+</body>
+</html>
