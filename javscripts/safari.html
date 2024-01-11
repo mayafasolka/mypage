@@ -10,9 +10,9 @@
         function beregn_antall_batter() {
             pass
         }
-        function beregn_pris(a) {
-           let p = 4000 + (200*a)
-           return p
+        function beregn_pris (a) {
+            return (4000 + (200*a))
+        
         }
         function beregn_rabatt() {
             pass
@@ -31,7 +31,7 @@
         }
     </script>
     <input  id="antallInn" type="number"></input>
-    <button onClick="les_antall_personer()">beregn pris</button>
+    <button onClick="les_antall_Personer()">Beregn pris</button>
     <p>for <span id="antallInn"></span> Personer som skal på ørnesafari blir prisen <span id="prisUt"></span> og de må leie 1 båte(r)</p>
     
 </body>
