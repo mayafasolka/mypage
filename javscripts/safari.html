@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Safari</title>
+    <title>Ørnesafari</title>
 </head>
 <body>
     <script>
-        function beregn_antall_baatter() {
+        function beregn_antall_batter() {
             pass
         }
         function beregn_pris(a) {
-           return (4000+(20*a))
+           let p = 4000 + (200*a)
+           return p
         }
         function beregn_rabatt() {
             pass
         }
-        function les_antall_personer() {
+        function les_antall_Personer() {
             let antallPersoner= document.querySelector('#antallIn').value;
             console.log(antallPersoner)
             let pris = beregn_pris(antallPersoner)
@@ -24,13 +25,14 @@
 
             let antallUt = document.querySelector("#antallUt")
             antallUt.innerHTML = antallPersoner
-            let priceUt=document.querySelector("#prisUt")
+
+            let prisUt=document.querySelector("#prisUt")
             prisUt.innerHTML = pris
         }
     </script>
     <input  id="antallInn" type="number"></input>
-    <button onClick="les_antall_personer()">Beregn pris</button>
-    <p>for <span id="antallInn"></span> personer som skal på safari blir prisen <span id="prisUt"></span> og de må leie 1 båte(r)</p>
+    <button onClick="les_antall_personer()">beregn pris</button>
+    <p>for <span id="antallInn"></span> Personer som skal på ørnesafari blir prisen <span id="prisUt"></span> og de må leie 1 båte(r)</p>
     
 </body>
 </html>
