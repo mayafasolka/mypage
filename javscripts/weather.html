@@ -3,29 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
 </head>
 <body>
+    <h1>lesing av temperatur</h1>
     <script>
-        function lesText() {
-            let grader= document.querySelector('#weather').value;
-            let svar =  ""
-        if(weather < 0){
-            console.log("its cold outside")
-            svar ="its cold outside "}
-        else if (grader >30){
-            console.log("its nice outside")
-            svar ="its nice outside"
-        }
-        else{
-            svar = "its nice outside"in
-        }
-        let utfelt =document.querySelector("#utfelt")
-        utfelt.
-
-
-        }
+        function lesWeather() {
+            console.log(document.querySelector('#weather').value)
+            if (document.querySelector('#weather').value < 0){
+                console.log("Det er kalt ute.Ta på lue")
+                document.querySelector("#utfelt").innerHTML = "Det er kalt ute Ta på lue"
+            }
+            else if (document.querySelector('#weather').value > 20){
+                console.log("Det er varmt ute i dag. Ta på caps")
+                document.querySelector("#utfelt").innerHTML = "Det er varmt ute i dag.Ta på caps"
+            }
+            else{
+                console.log("Det er passe varmt i dag. En nydelig dag.")
+                document.querySelector("#utfelt").innerHTML = "Det er passe varmt i dag.En nydelig dag."
+            }
+             
+            }
     </script>
-    
+    <input id="weather" type="number"></input>
+    <button onclick="lesWeather()"> les weather</button>
+    <p id="utfelt"></p>
 </body>
 </html>
