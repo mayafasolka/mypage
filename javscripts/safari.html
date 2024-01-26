@@ -7,12 +7,12 @@
 </head>
 <body>
     <script>
-        function beregn_antall_batter() {
+        function beregn_antall_baater() {
             pass
         }
-        function beregn_Pris (x) {
-            let price = 4000 + (200*x)
-            return price
+        function beregn_Pris(antall) {
+            let Pris = 4000 + (200*antall)
+            return Pris
         
         }
         function beregn_rabatt() {
@@ -21,22 +21,22 @@
 
 
         function les_antall_personer() {
-            let antallpersoner = document.querySelector('#antallInn').value;
-            console.log(antallpersoner)
-            let Pris = beregn_Pris(antallpersoner)
-            console.log(price)
+            let antallPersoner = document.querySelector('#antallInn').value;
+            console.log(antallPersoner)
+            let Pris = beregn_Pris(antallPersoner)
+            console.log(Pris)
 
             let antallUt = document.querySelector("#antallUt")
-            antallUt.innerHTML = antallpersoner
+            antallUt.innerHTML = antallPersoner
 
             let prisUt = document.querySelector("#prisUt")
-            prisUt.innerHTML = price
+            prisUt.innerHTML = Pris
         }
     </script>
 
     <input  id="antallInn" type="number"></input>
     <button onClick="les_antall_personer()">Beregn pris</button>
-    <p>For <span id="antallUt"></span> Personer som skal på ørnesafari blir Prisen <span id="prisUt"></span>. og de må leie 1 båte(r)</p>
+    <p>For <span id="antallUt"></span> Personer som skal på ørnesafari blir Prisen <span id="prisUt"></span>. og de må leie 1 båt(er)</p>
     
 </body>
 </html>
