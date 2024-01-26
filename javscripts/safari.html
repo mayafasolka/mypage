@@ -7,36 +7,52 @@
 </head>
 <body>
     <script>
-        function beregn_antall_baater() {
-            pass
+        function beregn_antall_batter(x) {
+            let batters = Math.ceil(x / 30);
+			return batters;
         }
-        function beregn_Pris(antall) {
-            let Pris = 4000 + (200*antall)
-            return Pris
+        function beregn_Pris (x, batters) {
+            let price = (batters*4000) + (200*x)
+            return price
         
         }
-        function beregn_rabatt() {
-            pass
+        function beregn_rabatt(pris) {
+            let rabatt = 2*pris/10
+            return rabatt
         }
 
 
         function les_antall_personer() {
-            let antallPersoner = document.querySelector('#antallInn').value;
-            console.log(antallPersoner)
-            let Pris = beregn_Pris(antallPersoner)
-            console.log(Pris)
+            let antallpersoner = document.querySelector('#antallInn').value;
+            console.log(antallpersoner)
+			
+			let batters = beregn_antall_batter(antallpersoner);
+			console.log(batters)
+			let batterUt = document.querySelector("#batterUt")
+            batterUt.innerHTML = batters
+            let Pris = beregn_Pris(antallpersoner, batters)
+            console.log(Pris) 
+			if (Pris > 6000) {
+				let rabatt = beregn_rabatt(Pris)
+				console.log(rabatt) 
+				let njuPris = Pris - rabatt
+				console.log(njuPris) 
+				let rabattUt = document.querySelector("#rabattUt")
+				rabattUt.innerHTML = "Rabatt 20%, ny pris: " + njuPris
+			}
 
             let antallUt = document.querySelector("#antallUt")
-            antallUt.innerHTML = antallPersoner
+            antallUt.innerHTML = antallpersoner
 
             let prisUt = document.querySelector("#prisUt")
-            prisUt.innerHTML = Pris
+            prisUt.innerHTML = Pris 
         }
     </script>
 
     <input  id="antallInn" type="number"></input>
     <button onClick="les_antall_personer()">Beregn pris</button>
-    <p>For <span id="antallUt"></span> Personer som skal på ørnesafari blir Prisen <span id="prisUt"></span>. og de må leie 1 båt(er)</p>
+    <p>For <span id="antallUt"></span> Personer som skal på ørnesafari blir Prisen <span id="prisUt"></span>. og de må leie <span id="batterUt"></span> båte(r)</p>
+	<span id="rabattUt"></span>
     
 </body>
 </html>
