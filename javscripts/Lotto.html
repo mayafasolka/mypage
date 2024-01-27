@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto</title>
+</head>
+<body>
+    <h2>Lotto numbers()</h2>
+
+    <p>Press for the first number:</p>
+    
+    <button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,50)">Generate</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function getRndInteger(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+  
+    </script>
+    
+
+    
+</script>
+
+</body>
+</html>
