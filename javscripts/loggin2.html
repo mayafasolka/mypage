@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin</title>
+</head>
+<body style="text-align: center;">
+   <script>
+    function login(){
+        
+        const users = {'aj':'123sab','ben':'hello','jula':'hello'}
+        
+        
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+
+        let loginstatus = false;
+
+        for (const [user, pass] of Object.entries(users) ) {
+            if ((user == username) && (pass == password)) {
+                loginstatus = true;
+                break
+            }
+        }
+
+        if (loginstatus) {
+            alert("Login successful!");
+            window.location.href = "safari.html";
+        }
+        
+        if(users.includes(username) && passwords.includes(password)) {
+            alert("login successful!");
+            window.location.href = "safari.html";
+        } 
+        else{
+            alert("Invalid username or password. please try again.")
+            window.location.reload()
+        }
+    }
+ </script>
+
+        username: <input id="username" type="text"></input> <br>
+        password: <input id="password" type="password"></input> <br>
+        <button onClick="login()">Login</button>
+</body>
+</html>
