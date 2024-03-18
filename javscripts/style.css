@@ -1,0 +1,42 @@
+/* Globals */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variables */
+;:root {
+ --bg-color:#171427
+ --bird-color:yellow
+ --obestacle-color:#f8f8f8
+}
+/* ============================== */
+#game{
+    background-color: aqua;
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 25px;
+    position: relative;
+    overflow: hidden;
+}
+#obstacle{
+    width: 50px;
+    height: 500px;
+    background-color: rgb(76, 143, 226);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+}
+#hole{
+    width: 500px;
+    height: 150px;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 150px;
+    left: 100%;
+    z-index: 2;
+}
+
